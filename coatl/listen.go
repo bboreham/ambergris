@@ -66,6 +66,7 @@ func (l *Listener) run() {
 			// everything deleted; can't cope
 			continue
 		}
+		// TODO: cope with a change of details, e.g. IP address or port
 		l.send(serviceName)
 	}
 }
